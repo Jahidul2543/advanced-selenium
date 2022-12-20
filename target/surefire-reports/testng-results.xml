@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-17T21:40:12Z" name="SmokeTestSuite" finished-at="2022-12-17T21:41:39Z" duration-ms="87808">
+    <groups>
+    </groups>
+    <test started-at="2022-12-17T21:40:12Z" name="PositiveLogInTest" finished-at="2022-12-17T21:40:27Z" duration-ms="15346">
+      <class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@45dd4eda]" started-at="2022-12-17T21:40:12Z" name="setUp" finished-at="2022-12-17T21:40:21Z" duration-ms="8925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.herokuapp.theinternet.loginpagetests.PositiveLogInTests.logInTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@76db540e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logInTest()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@45dd4eda]" started-at="2022-12-17T21:40:21Z" name="logInTest" finished-at="2022-12-17T21:40:27Z" duration-ms="5646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.loginpagetests.PositiveLogInTests@45dd4eda]" started-at="2022-12-17T21:40:27Z" name="tearDown" finished-at="2022-12-17T21:40:27Z" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.herokuapp.theinternet.loginpagetests.PositiveLogInTests -->
+    </test> <!-- PositiveLogInTest -->
+    <test started-at="2022-12-17T21:40:27Z" name="AlertsTests" finished-at="2022-12-17T21:41:08Z" duration-ms="41221">
+      <class name="com.herokuapp.theinternet.alertstests.AlertsTests">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@23f7d05d]" started-at="2022-12-17T21:40:27Z" name="setUp" finished-at="2022-12-17T21:40:35Z" duration-ms="7661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.herokuapp.theinternet.alertstests.AlertsTests.jsAlertTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@10358c32]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="jsAlertTest()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@23f7d05d]" started-at="2022-12-17T21:40:35Z" name="jsAlertTest" finished-at="2022-12-17T21:40:41Z" duration-ms="5843" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+result is not expected. 
+Should be 'You successfuly clicked an alert', but it is 'You successfully clicked an alert' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+result is not expected. 
+Should be 'You successfuly clicked an alert', but it is 'You successfully clicked an alert' expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.herokuapp.theinternet.alertstests.AlertsTests.jsAlertTest(AlertsTests.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsAlertTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@23f7d05d]" started-at="2022-12-17T21:40:41Z" name="tearDown" finished-at="2022-12-17T21:40:41Z" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@23f7d05d]" started-at="2022-12-17T21:40:41Z" name="setUp" finished-at="2022-12-17T21:40:48Z" duration-ms="7690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.herokuapp.theinternet.alertstests.AlertsTests.jsDismissTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@10358c32]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="jsDismissTest()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@23f7d05d]" started-at="2022-12-17T21:40:48Z" name="jsDismissTest" finished-at="2022-12-17T21:40:54Z" duration-ms="5463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsDismissTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@23f7d05d]" started-at="2022-12-17T21:40:54Z" name="tearDown" finished-at="2022-12-17T21:40:54Z" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@23f7d05d]" started-at="2022-12-17T21:40:54Z" name="setUp" finished-at="2022-12-17T21:41:02Z" duration-ms="7656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.herokuapp.theinternet.alertstests.AlertsTests.jsPromptTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@10358c32]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="jsPromptTest()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@23f7d05d]" started-at="2022-12-17T21:41:02Z" name="jsPromptTest" finished-at="2022-12-17T21:41:08Z" duration-ms="6647" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Alert message is not expected. 
+Should be 'I am a JS prompt', but it is 'I am a JS prompt[FAIL]' expected [true] but found [false],
+result is not expected. 
+Should be 'You entered: Hello Alert, its Dmitry here', but it is 'You entered: Hello Alert, it's Dmitry here[FAIL]' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Alert message is not expected. 
+Should be 'I am a JS prompt', but it is 'I am a JS prompt[FAIL]' expected [true] but found [false],
+result is not expected. 
+Should be 'You entered: Hello Alert, its Dmitry here', but it is 'You entered: Hello Alert, it's Dmitry here[FAIL]' expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.herokuapp.theinternet.alertstests.AlertsTests.jsPromptTest(AlertsTests.java:113)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsPromptTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.alertstests.AlertsTests@23f7d05d]" started-at="2022-12-17T21:41:08Z" name="tearDown" finished-at="2022-12-17T21:41:08Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.herokuapp.theinternet.alertstests.AlertsTests -->
+    </test> <!-- AlertsTests -->
+    <test started-at="2022-12-17T21:41:08Z" name="UploadTests" finished-at="2022-12-17T21:41:39Z" duration-ms="31182">
+      <class name="com.herokuapp.theinternet.uploadtests.UploadTests">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@75f32542]" started-at="2022-12-17T21:41:08Z" name="setUp" finished-at="2022-12-17T21:41:16Z" duration-ms="7656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.herokuapp.theinternet.uploadtests.UploadTests.fileUploadTest(int,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a2843ec]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileUploadTest(int, java.lang.String)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@75f32542]" started-at="2022-12-17T21:41:16Z" name="fileUploadTest" data-provider="files" finished-at="2022-12-17T21:41:18Z" duration-ms="2273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[index.html]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@75f32542]" started-at="2022-12-17T21:41:18Z" name="tearDown" finished-at="2022-12-17T21:41:18Z" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@75f32542]" started-at="2022-12-17T21:41:18Z" name="setUp" finished-at="2022-12-17T21:41:27Z" duration-ms="8293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.herokuapp.theinternet.uploadtests.UploadTests.fileUploadTest(int,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a2843ec]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileUploadTest(int, java.lang.String)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@75f32542]" started-at="2022-12-17T21:41:27Z" name="fileUploadTest" data-provider="files" finished-at="2022-12-17T21:41:29Z" duration-ms="2106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[logo.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@75f32542]" started-at="2022-12-17T21:41:29Z" name="tearDown" finished-at="2022-12-17T21:41:29Z" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@75f32542]" started-at="2022-12-17T21:41:29Z" name="setUp" finished-at="2022-12-17T21:41:36Z" duration-ms="7708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.herokuapp.theinternet.uploadtests.UploadTests.fileUploadTest(int,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a2843ec]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileUploadTest(int, java.lang.String)[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@75f32542]" started-at="2022-12-17T21:41:36Z" name="fileUploadTest" data-provider="files" finished-at="2022-12-17T21:41:39Z" duration-ms="2902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[text.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.herokuapp.theinternet.uploadtests.UploadTests@75f32542]" started-at="2022-12-17T21:41:39Z" name="tearDown" finished-at="2022-12-17T21:41:39Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.herokuapp.theinternet.uploadtests.UploadTests -->
+    </test> <!-- UploadTests -->
+  </suite> <!-- SmokeTestSuite -->
+</testng-results>
