@@ -1,12 +1,12 @@
 package com.herokuapp.theinternet.loginpagetests;
 
+import com.herokuapp.theinternet.pages.SecureAreaPage;
 import org.openqa.selenium.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.herokuapp.theinternet.base.TestUtilities;
 import com.herokuapp.theinternet.pages.LoginPage;
-import com.herokuapp.theinternet.pages.SecureAreaPage;
 import com.herokuapp.theinternet.pages.WelcomePage;
 
 public class PositiveLogInTests extends TestUtilities {

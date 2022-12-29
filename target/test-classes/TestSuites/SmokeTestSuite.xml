@@ -2,11 +2,20 @@
 
 <suite name="SmokeTestSuite" verbose="1">
 	
-	<test name="PositiveLogInTest">
+<!--	<test name="PositiveLogInTest">-->
+<!--		<parameter name="browser" value="chrome"></parameter>-->
+<!--		<classes>-->
+<!--			<class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests" />-->
+<!--		</classes>-->
+<!--		-->
+<!--	</test>-->
+
+	<test name="KeyPressesTest">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="com.herokuapp.theinternet.loginpagetests.PositiveLogInTests" />
+			<class name="com.herokuapp.theinternet.keypressestests.KeyPressesTests" />
 		</classes>
+
 	</test>
 	
 <!--	<test name="AlertsTests">-->

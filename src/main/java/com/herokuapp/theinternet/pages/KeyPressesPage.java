@@ -6,34 +6,20 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class KeyPressesPage extends BasePageObject {
+    //private String pageUrl = "http://the-internet.herokuapp.com/key_presses";
+    private By keyBoxLocator = By.id("target");
+    private By actualTextLocator = By.id("result");
+    public KeyPressesPage(WebDriver driver, Logger log) {
+        super(driver, log);
+    }
+    public void pressKey(Keys key) {
+        log.info("Pressing " + key.name());
+        pressKey(keyBoxLocator, key);
+    }
 
-	private String pageUrl = "http://the-internet.herokuapp.com/key_presses";
-
-	private By body = By.xpath("//body");
-	private By resultTextLocator = By.id("result");
-
-	public KeyPressesPage(WebDriver driver, Logger log) {
-		super(driver, log);
-	}
-
-	/** Open KeyPressesPage with it's url */
-	public void openPage() {
-		log.info("Opening page: " + pageUrl);
-		openUrl(pageUrl);
-		log.info("Page opened!");
-	}
-
-	/** Press given key while on this page */
-	public void pressKey(Keys key) {
-		log.info("Pressing " + key.name());
-		pressKey(body, key);
-	}
-
-	/** Get result text */
-	public String getResultText() {
-		String result = find(resultTextLocator).getText();
-		log.info("Result text: " + result);
-		return result;
-	}
-
+    public String getActualText(){
+        String actualText = find(actualTextLocator).getText();
+        log.info("Actual text: " + actualText);
+        return actualText;
+    }
 }

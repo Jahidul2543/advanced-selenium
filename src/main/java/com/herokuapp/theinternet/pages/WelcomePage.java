@@ -14,6 +14,7 @@ public class WelcomePage extends BasePageObject {
 	private By javaScriptAlertsLinkLocator = By.linkText("JavaScript Alerts");
 	private By multipleWindowsLinkLocator = By.linkText("Multiple Windows");
 	private By editorLinkLocator = By.linkText("WYSIWYG Editor");
+	private By keyPressesLinkLocator = By.linkText("Key Presses");
 	
 	public WelcomePage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -33,7 +34,13 @@ public class WelcomePage extends BasePageObject {
 		return new LoginPage(driver, log);
 	}
 
-	/** Open CheckboxesPage by clicking on Checkboxes Link */
+	public KeyPressesPage clickKeyPresesLInk(){
+		openPage();
+		click(keyPressesLinkLocator);
+		return new KeyPressesPage(driver, log);
+	}
+
+/*	*//** Open CheckboxesPage by clicking on Checkboxes Link *//*
 	public CheckboxesPage clickCheckboxesLink() {
 		log.info("Clicking Checkboxes link on Welcome Page");
 		click(checkboxesLinkLocator);
@@ -62,6 +69,6 @@ public class WelcomePage extends BasePageObject {
 		log.info("Clicking WYSIWYG Editor link on Welcome Page");
 		click(editorLinkLocator);
 		return new EditorPage(driver, log);
-	}
+	}*/
 
 }
