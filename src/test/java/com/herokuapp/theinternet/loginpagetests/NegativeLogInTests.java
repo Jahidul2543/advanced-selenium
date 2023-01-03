@@ -16,6 +16,8 @@ public class NegativeLogInTests extends TestUtilities {
 	@Test(priority = 1, dataProvider = "csvReader", dataProviderClass = CsvDataProviders.class)
 	public void negativeLogInTest(Map<String, String> testData) {
 		// Data
+		// no, username,        password,             expectedMessage,           description
+		// 1, incorrectUsername,SuperSecretPassword!,Your username is invalid!,incorrect username
 		String no = testData.get("no");
 		String username  = testData.get("username");
 		String password = testData.get("password");

@@ -20,6 +20,10 @@ public class CsvDataProviders {
 	@DataProvider(name = "csvReader")
 	public static Iterator<Object[]> csvReader(Method method) {
 		List<Object[]> list = new ArrayList<Object[]>();
+		// src/test/resources/dataproviders/NegativeLogInTests/negativeLogInTest.csv
+		// src/test/resources/dataproviders/NegativeLogInTests/negativeLogInTest.csv
+		//Actual Path due to our folder creation:- src/test/resources/dataproviders.PositiveLogInTests/logInTest.csv
+		// From using the progam: src/test/resources/dataproviders/PositiveLogInTests/logInTest.csv
 		String pathname = "src" + File.separator + "test" + File.separator + "resources" + File.separator
 				+ "dataproviders" + File.separator + method.getDeclaringClass().getSimpleName() + File.separator
 				+ method.getName() + ".csv";
